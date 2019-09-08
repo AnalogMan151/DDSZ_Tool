@@ -9,6 +9,10 @@ import os, lz4.block, argparse
 def main():
     print('\n======== DDSZ Archive Tool ========\n\n')
 
+    if sys.version_info <= (3,1,0):
+        print('Python version 3.1.x+ needed to run this script.\n\n')
+        return 1    
+    
     # Arg parser for program options
     parser = argparse.ArgumentParser(description='Process DDSZ files with LZ4')
     parser.add_argument('filename', help='Path to file')
