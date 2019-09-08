@@ -4,7 +4,7 @@
 # Purpose: Compress/Decompress DDSZ files for Switch 
 # Requirements: LZ4 (pip install lz4)
 
-import os, lz4.block, argparse
+import sys, os, lz4.block, argparse
 
 def main():
     print('\n======== DDSZ Archive Tool ========\n\n')
